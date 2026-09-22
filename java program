@@ -1,0 +1,18 @@
+public class RentalDemo {
+
+    public static void main(String[] args) {
+
+        int totalAmount = 5000;
+        int rentalDays = 0;
+
+        try {
+            int dailyRate = totalAmount / rentalDays;
+
+            System.out.println("Daily Rental Rate: " + dailyRate);
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Error: Rental days cannot be zero.");
+            System.out.println("Please enter a valid number of rental days.");
+        }
+    }
+}
